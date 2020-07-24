@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"> 
+    <script src="./app.js"></script>
+    <title>Small Note</title>
+</head>
+<body onload="showNotes()">
+    <main>
+        <div class="take-note">
+            <input type="text" placeholder="Take Note.." onfocus="showModal('-1')">
+        </div>
+        <div class="show-notes" id="list">
+            <!-- <div class="note" onclick="showModal('1')">
+                <h3>Ideas to Change</h3>
+                <hr id="divider">
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi porro harum natus et voluptates nostrum, fuga dicta eum fugiat quisquam sequi quos aut numquam quibusdam nam culpa iusto itaque.</p>
+            </div> -->
+
+        </div>
+    </main>
+    <div class="modal" id="modal">
+        <div id="note-time"></div>
+        <div class="note-form">
+            <input type="text" placeholder="Title" id="title" required>
+            <textarea name="desc" id="desc" placeholder="Description" required></textarea>
+        </div>
+        <div class="cta">
+            <button id="close-btn" class="btn" onclick="closeNote()">Close</button>
+            <button id="del-btn" class="btn" onclick="deleteNote()">Delete</button>
+            <button id="save-btn" class="btn" onclick="saveNote()">Save</button>
+        </div>
+    </div>
+    
+</body>
+</html>

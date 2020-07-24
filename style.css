@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+button{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b262c;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.take-note > input{
+    width: 60%;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    border-bottom: 4px solid #3282b8;
+}
+
+.show-notes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.note{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    color: #0f4c75;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#divider{
+    margin: 10px auto;
+    border: none;
+    border-bottom: 1px solid #0f4c75;   
+}
+
+.modal{
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease-in;
+}
+#note-time{
+    color: white;
+    margin-bottom: 10px;
+}
+.note-form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 50%;
+}
+
+#title,
+#desc{   
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#title{
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+#desc{
+    height: 100%;    
+}
+
+.cta{
+    padding-top: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    width: 10%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#close-btn{
+    background-color: white;
+}
+#close-btn:hover{
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+#del-btn{
+    background-color: #cf1b1b;
+    color: white;
+}
+#del-btn:hover{
+    background-color: #cf1b1be5;
+}
+
+
+#save-btn{
+    background-color: #0f4c75;
+    color: white;
+}
+#save-btn:hover{
+    background-color: #0f4c75e1;
+}
