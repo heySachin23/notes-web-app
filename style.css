@@ -122,6 +122,7 @@ main{
     margin-left: 10px;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 #close-btn{
@@ -147,3 +148,20 @@ main{
 #save-btn:hover{
     background-color: #0f4c75e1;
 }
+
+@media all and (max-width:900px){
+    .btn{
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width:700px){
+    .cta{
+        justify-content: center;
+    }
+    .btn{
+        width: 20%;
+        font-size: 12px;
+    }
+}
+
